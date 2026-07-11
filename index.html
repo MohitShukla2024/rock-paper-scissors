@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors | Portfolio Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>Rock, Paper, Scissors</h1>
+            <p>First to 5 points wins the match!</p>
+        </header>
+
+        <section class="scoreboard">
+            <div class="score-box">
+                <span id="player-score">0</span>
+                <p>Player</p>
+            </div>
+            <div class="score-divider">:</div>
+            <div class="score-box">
+                <span id="computer-score">0</span>
+                <p>Computer</p>
+            </div>
+        </section>
+
+        <section class="display-area">
+            <div class="choice-preview">
+                <div class="choice-card" id="player-choice-display">?</div>
+                <p>Your Choice</p>
+            </div>
+            <div class="result-message">
+                <h2 id="round-result">Choose your weapon!</h2>
+            </div>
+            <div class="choice-preview">
+                <div class="choice-card" id="computer-choice-display">?</div>
+                <p>Computer's Choice</p>
+            </div>
+        </section>
+
+        <section class="controls">
+            <button class="choice-btn" data-choice="rock">✊ Rock</button>
+            <button class="choice-btn" data-choice="paper">✋ Paper</button>
+            <button class="choice-btn" data-choice="scissors">✌️ Scissors</button>
+        </section>
+
+        <button id="reset-btn" class="hidden">Play Again</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

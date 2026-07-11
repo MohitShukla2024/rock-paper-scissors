@@ -1,0 +1,147 @@
+:root {
+    --bg-color: #1a1a2e;
+    --card-bg: #16213e;
+    --accent-color: #0f3460;
+    --text-color: #e94560;
+    --text-light: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.game-container {
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+header h1 {
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    background-color: var(--accent-color);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.score-box {
+    flex: 1;
+}
+
+.score-box span {
+    font-size: 2.5rem;
+    font-weight: bold;
+    display: block;
+}
+
+.score-divider {
+    font-size: 2rem;
+    padding: 0 20px;
+    color: var(--text-color);
+}
+
+.display-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.choice-preview {
+    flex: 1;
+}
+
+.choice-card {
+    font-size: 3rem;
+    background-color: var(--bg-color);
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    border: 3px solid var(--accent-color);
+}
+
+.result-message {
+    flex: 1.5;
+    padding: 0 10px;
+}
+
+.result-message h2 {
+    font-size: 1.2rem;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.choice-btn {
+    background-color: var(--accent-color);
+    color: var(--text-light);
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.1s, background-color 0.2s;
+}
+
+.choice-btn:hover {
+    background-color: var(--text-color);
+}
+
+.choice-btn:active {
+    transform: scale(0.95);
+}
+
+#reset-btn {
+    background-color: var(--text-color);
+    color: var(--text-light);
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none !important;
+}
